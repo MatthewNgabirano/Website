@@ -1,0 +1,140 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .hero img {
+    margin-top: 150px;
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+  }
+  
+  .hero h1 {
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+  }
+  
+  .hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero p {
+    width: 50%;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  
+  .hero-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-connect,
+  .hero-resume {
+    padding: 25px 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hero-connect {
+    background: linear-gradient(64deg, #DF8908 -5.09%, #B415FF 106.28%);
+    color: white;
+  }
+  
+  .hero-connect:hover {
+    border: 2px solid #fff;
+  }
+  
+  .hero-resume {
+    border: 2px solid #fff;
+    color: white;
+  }
+  
+  .hero-resume:hover {
+    border-color: #B415FF;
+  }
+  
+  /* Mobile (≤600px) */
+  @media screen and (max-width: 600px) {
+    .hero img {
+      margin-top: 100px;
+      width: 220px;
+    }
+  
+    .hero h1 {
+      font-size: 40px;
+      width: 95%;
+    }
+  
+    .hero p {
+      font-size: 18px;
+      width: 90%;
+      line-height: 30px;
+    }
+  
+    .hero-action {
+      gap: 15px;
+      font-size: 16px;
+    }
+  
+    .hero-connect,
+    .hero-resume {
+      padding: 15px 30px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Tablet (601px - 900px) */
+  @media screen and (max-width: 900px) {
+    .hero img {
+      width: 250px;
+    }
+  
+    .hero h1 {
+      font-size: 55px;
+      width: 85%;
+    }
+  
+    .hero p {
+      font-size: 20px;
+      width: 75%;
+    }
+  
+    .hero-connect,
+    .hero-resume {
+      padding: 20px 40px;
+    }
+  }
+  
+  /* Small Laptops (901px - 1200px) */
+  @media screen and (max-width: 1200px) {
+    .hero h1 {
+      font-size: 70px;
+    }
+  
+    .hero p {
+      font-size: 22px;
+    }
+  
+    .hero-connect,
+    .hero-resume {
+      padding: 22px 50px;
+    }
+  }
+  
